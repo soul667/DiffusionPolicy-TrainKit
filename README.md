@@ -23,7 +23,7 @@ docker build -t dp-train:cu128-lr061 .
 For multiple servers, build once and push to your registry:
 
 ```bash
-REGISTRY=ghcr.io/YOUR_NAME
+REGISTRY=ghcr.io/soul667
 docker tag dp-train:cu128-lr061 $REGISTRY/dp-train:cu128-lr061
 docker push $REGISTRY/dp-train:cu128-lr061
 ```
@@ -31,8 +31,8 @@ docker push $REGISTRY/dp-train:cu128-lr061
 Then on every training server:
 
 ```bash
-docker pull ghcr.io/YOUR_NAME/dp-train:cu128-lr061
-export IMAGE=ghcr.io/YOUR_NAME/dp-train:cu128-lr061
+docker pull ghcr.io/soul667/diffusionpolicy-trainkit:cu128-lr061
+export IMAGE=ghcr.io/soul667/diffusionpolicy-trainkit:cu128-lr061
 ```
 
 ## 2. Check the runtime
