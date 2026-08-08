@@ -1,0 +1,17 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.env
+.venv/
+venv/
+data/
+outputs/
+checkpoints/
+wandb/
+*.zarr
+*.hdf5
+*.h5
+*.npz
